@@ -42,7 +42,7 @@ header{
     border-bottom: #336B6A solid 3px;
     
 }
-.navbar{
+#navbar{
     height: fit-content;
     width: 50%;
     display: flex;
@@ -58,7 +58,7 @@ header{
     font-size: 28px;
     border-bottom: var(--second-color) solid 3px;
 }
-.menu{
+#menu{
     display: none;
 }
 header a{
@@ -93,7 +93,7 @@ header a{
 }
 .head h1{
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 150px;
     font-size: 30px;
 }
 .head h2{
@@ -138,6 +138,9 @@ header a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.titre2{
+    margin-top: 120px;
 }
 .titre h2{
     font-size: 38px;
@@ -404,6 +407,7 @@ form input[type="submit"]:hover{
     font-size: 26px;
 }
 @media (max-width:1200px){
+    
     .first{
         display: flex;
         flex-direction: column;
@@ -427,15 +431,39 @@ form input[type="submit"]:hover{
 }
 @media (max-width:1040px) {
     header{
-        position: relative;
+        position: fixed;
     }
-    .navbar{
-        display: none;
+   
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
     }
-    .menu{
+    #navbar{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: var(--text-color);
+        width: 100%;
+        height: 200px;
+        transition: 0.80s;
+    }
+    #navbar.active2{
+        right: 0;
+    }
+    
+    #menu{
         display: block;
         width: 42px;
         margin-right: 2%;
+        cursor: pointer;
     }
     .inscription img{
         display: none;
@@ -443,6 +471,11 @@ form input[type="submit"]:hover{
     form{
         flex-grow: 1;
         margin: 0% 4% 5%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width:950px){
@@ -454,7 +487,9 @@ form input[type="submit"]:hover{
     }
 } 
 @media (max-width:825px){
-    
+    .head h1{
+        margin-top: 100px;
+    }
 
     .barre h2{
         width: 300px;
@@ -520,6 +555,9 @@ form input[type="submit"]:hover{
     }
     .titre h2{
         font-size: 29px;
+    }
+    .titre2{
+        margin-top: 120px;
     }
     .cards{
         margin-top: 7%;
