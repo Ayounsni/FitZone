@@ -489,7 +489,13 @@ form input[type="submit"]:hover{
         align-items: center;
     }
     .abonn{
-        width: 300px;
+        width: 320px;
+    }
+    .abonn h2{
+        font-size: 40px;
+    }
+    .abonn h4{
+        font-size: 50px;
     }
     .foot{
         margin-top: 10%;
