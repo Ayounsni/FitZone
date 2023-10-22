@@ -487,5 +487,8 @@ form input[type="submit"]:hover{
     .inc{
         font-size: 22px;
     }
+    .head h2{
+        font-size: 60px;
+    }
 
 } 
