@@ -393,7 +393,6 @@ form h3{
     font-family:'JejuGothic-Regular' ;
 }
 form input[type="submit"]{
-    width: 24%;
     align-self: flex-end;
     padding: 5px ;
     box-shadow: none;
@@ -419,6 +418,12 @@ form input[type="submit"]:hover{
     .prog{
         margin-bottom: 7%;
     }
+    .tarif{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 @media (max-width:1040px) {
     header{
@@ -429,13 +434,23 @@ form input[type="submit"]:hover{
     }
     .menu{
         display: block;
-        width: 45px;
+        width: 42px;
         margin-right: 2%;
+    }
+    .inscription img{
+        display: none;
+    }
+    form{
+        flex-grow: 1;
+        margin: 0% 4% 5%;
     }
 }
 @media (max-width:950px){
     .lien{
         display: none;
+    }
+    form{
+        padding:30px 40px ;
     }
 } 
 @media (max-width:825px){
@@ -466,7 +481,26 @@ form input[type="submit"]:hover{
         justify-content: space-between;
     }
     .respon img{
-        width: 50px;
+        width: 42px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .abonn{
+        width: 300px;
+    }
+    .foot{
+        margin-top: 10%;
+    }
+    .foot h2{
+        font-size: 25px;
+
+    }
+    .foot a{
+        font-size: 22px;
+
     }
     .barre{
         display: flex;
@@ -496,5 +530,8 @@ form input[type="submit"]:hover{
     
     .cardio p{
         font-size: 17px;
+    }
+    form{
+        padding:30px ;
     }
 } 
