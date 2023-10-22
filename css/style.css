@@ -488,10 +488,13 @@ form input[type="submit"]:hover{
         font-size: 22px;
     }
     .head h2{
-        font-size: 55px;
+        font-size: 60px;
     }
+    .cardio{
+        width: 80%;
+    }
+    
     .cardio p{
-        font-size: 15px;
-
+        font-size: 17px;
     }
 } 
