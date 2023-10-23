@@ -21,7 +21,7 @@ window.addEventListener("scroll", () =>{
 })
 
 question1.addEventListener("click", () => {
-    answer1.classList.toggle("open")
+    ask.classList.toggle("open")
     question1.classList.toggle("open")
     border.classList.toggle("open")
 })
