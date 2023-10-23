@@ -2,6 +2,10 @@
     font-family: 'JejuGothic-Regular' ;
     src: url("../font/JejuGothic-Regular.ttf");
 }
+@font-face {
+    font-family: 'Javanese';
+    src: url(../font/Javanese\ text.ttf);
+}
 *{
     padding: 0;
 	margin: 0;
@@ -40,6 +44,7 @@ header{
     position: fixed;
     top: 0%;
     border-bottom: #336B6A solid 3px;
+    z-index: 100;
     
 }
 #navbar{
@@ -187,9 +192,69 @@ header a{
     font-size: 25px;
 }
 .faq{
-    height: 800px;
+    height: fit-content;
+    padding: 50px 0px;
     background-image: url(../img/back.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: fit-content;
+    background-color: var(--text-color);
+    padding: 0 10px;
+    border: #D9D9D9 solid 2px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.question p{
+    font-family: 'Javanese';
+    font-weight: bolder;
+    font-size: 23px;
+}
+.question img{
+    width: 24px;
+}
+.answer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #D9D9D9;
+    border: #D9D9D9 solid 2px;
+    padding: 0 10px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.answer p{
+   font-family: 'Javanese';
+   font-size: 18px;
+}
+#question1.open{
+    content: url(../img/arrw.png);
+}
+#answer1.open{
+    position: relative;
+    
+}
+#reponse.open{
+    content: url(../img/arrw.png);
+}
+#answer2.open{
+    position: relative;
+}
+#reponse2.open{
+    content: url(../img/arrw.png);
+}
+#answer3.open{
+    position: relative;
 }
 footer{
     background-color: var(--second-color);
@@ -499,7 +564,19 @@ form input[type="submit"]:hover{
         font-size: 30px;
     }
 } 
+@media (max-width:850px){
+    .question p{
+        font-size: 17px;
+    }
+    .answer p{
+        font-size: 15px;
+    }
+    .question img{
+        width: 20px;
+    }
+}
 @media (max-width:567px){
+    
     .foot1{
         display: none;
     }
@@ -554,7 +631,7 @@ form input[type="submit"]:hover{
         margin-top: 10%;
     }
     .titre h2{
-        font-size: 29px;
+        font-size: 25px;
     }
     .titre2{
         margin-top: 120px;
@@ -578,4 +655,8 @@ form input[type="submit"]:hover{
     form{
         padding:30px ;
     }
+    .question{
+        height: fit-content;
+    }
+    
 } 
