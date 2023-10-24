@@ -201,6 +201,7 @@ header a{
     align-items: center;
     justify-content: center;
 }
+
 .question{
     display: flex;
     justify-content: space-between;
@@ -244,6 +245,9 @@ header a{
     border-radius: 10px 10px 0px 0px;
 }
 #border1.open{
+    border-radius: 10px 10px 0px 0px;
+}
+#border2.open{
     border-radius: 10px 10px 0px 0px;
 }
 #border.open{
@@ -576,6 +580,12 @@ form input[type="submit"]:hover{
     .question p{
         font-size: 17px;
     }
+    .answer {
+        width: 90%;
+    }
+    .question{
+        width: 90%;
+    }
     .answer p{
         font-size: 15px;
     }
@@ -663,8 +673,5 @@ form input[type="submit"]:hover{
     form{
         padding:30px ;
     }
-    .question{
-        height: fit-content;
-    }
-    
+  
 } 
