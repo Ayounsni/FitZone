@@ -16,6 +16,6 @@ Ce projet a pour objectif de créer un site web pour promouvoir les services de 
 
 6. **Validation du Code** : S'assurer que le code HTML, CSS et JavaScript respecte les normes du web en utilisant le service de validation du W3C.
 
-# lien de Maquettage FIGMA 
+# Lien de maquettage FIGMA 
 https://www.figma.com/file/LwZ81Vb3TpesUlsuDC7lyt/FITZONE?type=design&node-id=46%3A111&mode=design&t=SsqoCHWLlwkv7W5X-1
 
