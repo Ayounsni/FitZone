@@ -1,5 +1,17 @@
-const links = document.querySelectorAll(".list li" )
-const login = document.querySelectorAll(".login" )
+const links = document.querySelectorAll(".list li" );
+const login = document.querySelectorAll(".login" );
+const question1 = document.getElementById("question1");
+const reponse = document.getElementById("reponse");
+const reponse2 = document.getElementById("reponse2");
+const ask = document.getElementById("ask");
+const border = document.getElementById("border");
+const answer2 = document.getElementById("answer2");
+const border1 = document.getElementById("border1");
+const answer3 = document.getElementById("answer3");
+const border2 = document.getElementById("border2");
+const menu = document.getElementById("menu");
+const navbar = document.getElementById("navbar");
+
 
 
 menu.addEventListener("click", () => {
@@ -37,54 +49,6 @@ reponse2.addEventListener("click", () => {
     reponse2.classList.toggle("open")
     border2.classList.toggle("open")
 })
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-        var nom = document.getElementById('nom').value;
-        var prenom = document.getElementById('prenom').value;
-        var cin = document.getElementById('cin').value;
-        var tel = document.getElementById('numero').value;
-        var email = document.getElementById('adresse').value;
-
-        var nomRegex = /^[A-Za-z\s']{3,}$/;
-        var prenomRegex = /^[A-Za-z\s']{3,}$/;
-        var cinRegex = /^[a-zA-Z]{2}\d{6}$/;
-        var telRegex = /^\+212\d{9}$/;
-        var emailRegex = /^\S+@\S+\.\S+$/;
-
-        if (!nomRegex.test(nom)) {
-            alert("Veuillez entrer un nom valide (au moins 3 caractères).");
-            event.preventDefault();
-            return;
-        }
-        if (!prenomRegex.test(prenom)) {
-            alert("Veuillez entrer un prénom valide (au moins 3 caractères).");
-            event.preventDefault();
-            return;
-        }
-
-        if (!cinRegex.test(cin)) {
-            alert("Veuillez entrer un numéro de CIN valide (2 lettres suivies de 6 chiffres).");
-            event.preventDefault();
-            return;
-        }
-
-        if (!telRegex.test(tel)) {
-            alert("Veuillez entrer un numéro de téléphone valide (commence par +212 suivi de 9 chiffres).");
-            event.preventDefault();
-            return;
-        }
-
-        if (!emailRegex.test(email)) {
-            alert("Veuillez entrer une adresse e-mail valide.");
-            event.preventDefault();
-            return;
-        }
-    });
-});
 
 
 

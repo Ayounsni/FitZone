@@ -43,18 +43,23 @@
     </section>
     <section class="inscription">
         <img src="img/bak.png" alt="image">
-        <form>
+        <form id="sign" >
             <h2>INSCRIPTION</h2>
             <h3>Indiquez vos coordonnées, on vous rappelle !</h3>
-            <div class="insc">
-            <input type="text" id="nom" name="nome" placeholder="Nom" required>
-            <input type="text" id="prenom" name="prenome" placeholder="Prenom" required>
-            <input type="text" id="cin" name="cine" placeholder="CIN" required>
-            <input type="email" id="adresse" name="adressee" placeholder="Adresse E-mail" required>
-            <input type="tel" id="numero" name="numeroe" placeholder="Numero de Telephone" required>
-            <input type="submit" id="submit" name="sub" value="S'INSCRIRE" >
-            </div>
-        </form>
+            <div class="insc" method="post">
+            <input type="text" id="nom" name="nom" placeholder="Nom" >
+            <span id="nomError" class="error-message"></span>
+            <input type="text" id="prenom" name="prenom" placeholder="Prenom" >
+            <span id="prenomError" class="error-message"></span>
+            <input type="text" id="cin" name="cin" placeholder="CIN">
+            <span id="cinError" class="error-message"></span>
+            <input type="email" id="adresse" name="adresse" placeholder="Adresse E-mail">
+            <span id="emailError" class="error-message"></span>
+            <input type="tel" id="numero" name="numero" placeholder="Numero de Telephone">
+            <span id="phoneError" class="error-message"></span>
+            <input type="submit"  value="S'INSCRIRE" >
+            </form>
+        </div>
     </section>
     <footer>
         <div class="foot foot1">
@@ -85,6 +90,6 @@
         </div>
     </footer>
     <div class="last"><h2>Copyright © 2023 FITZONE</h2></div>
-    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
 </body>
 </html>
